@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Backgrounds */
+  --color-bg:               #F7F6F2;
+  --color-bg-dark:          #0A1628;
+  --color-bg-surface:       #FFFFFF;
+  --color-bg-tint:          #EDF5F3;
+
+  /* Text */
+  --color-text:             #0F1C2E;
+  --color-text-muted:       #5C6878;
+  --color-text-inverse:     #F7F6F2;
+  --color-text-accent:      #00897B;
+
+  /* Accent — mint/teal, ONLY for unprotected/gap metrics */
+  --color-accent:           #00897B;
+  --color-accent-dark:      #006B5E;
+  --color-accent-light:     #EDF5F3;
+
+  /* Data visualization */
+  --color-data-unprotected: #00897B;
+  --color-data-protected:   #0A1628;
+  --color-data-neutral:     #8A9BAE;
+  --color-data-tier1:       #0A1628;
+  --color-data-tier6:       #00897B;
+  --color-data-partial:     #5C6878;
+
+  /* Borders */
+  --color-border:           #E0DED8;
+  --color-border-strong:    #B8B5AE;
+
+  /* Spacing scale */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   16px;
+  --space-lg:   24px;
+  --space-xl:   48px;
+  --space-2xl:  80px;
+  --space-3xl:  120px;
+
+  /* Typography scale */
+  --text-display: clamp(56px, 8vw, 120px);
+  --text-hero:    clamp(32px, 5vw, 64px);
+  --text-h1:      clamp(28px, 4vw, 48px);
+  --text-h2:      clamp(22px, 3vw, 36px);
+  --text-h3:      clamp(18px, 2.5vw, 26px);
+  --text-body:    17px;
+  --text-small:   14px;
+  --text-label:   12px;
+
+  /* Font families */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-data:    'IBM Plex Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
