@@ -93,7 +93,7 @@ export default function TitleGapComparison() {
         </div>
 
         {titleGap.byTitleGroup.map((group) => (
-          <div key={group.group} style={{ marginBottom: 'var(--space-sm)', position: 'relative' }}>
+          <div key={group.group} style={{ marginBottom: 'var(--space-md)', position: 'relative' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
               <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 400, color: 'var(--color-text)' }}>
                 {group.group} <span style={{ fontFamily: 'var(--font-data)', fontSize: '10px', color: 'var(--color-text-muted)' }}>(n={group.n})</span>

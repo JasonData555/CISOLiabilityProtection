@@ -131,8 +131,6 @@ export const titleGap = {
     { group: 'Other / Uncategorized',        n: 33, doRate: 15.2, neither: 69.7, tier6: 78.8, boardQtrly: 30.3, baseMedian: 270000 },
     { group: 'Director (Sr./Managing)',      n: 65, doRate: 18.5, neither: 66.2, tier6: 69.2, boardQtrly: 36.9, baseMedian: 228000 },
     { group: 'VP / Vice President',          n: 60, doRate: 33.3, neither: 51.7, tier6: 55.0, boardQtrly: 26.7, baseMedian: 289000 },
-    { group: 'Information Security Officer', n: 76, doRate: 51.3, neither: 39.5, tier6: 38.2, boardQtrly: 50.0, baseMedian: 295000 },
-    { group: 'Chief [spelled out]',          n: 33, doRate: 72.7, neither: 18.2, tier6: 15.2, boardQtrly: 54.5, baseMedian: 367000 },
   ],
   formalCISOBenchmarkDO: 59.5,
 };
