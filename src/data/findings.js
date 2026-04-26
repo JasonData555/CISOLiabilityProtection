@@ -127,10 +127,10 @@ export const titleGap = {
     baseMedian: 280000, bonusMedian: 65500, equityMedian: 200000, totalMedian: 545500,
   },
   byTitleGroup: [
-    { group: 'Head of Security',             n: 49, doRate:  8.2, neither: 79.6, tier6: 69.4, boardQtrly: 14.3, baseMedian: 300000 },
-    { group: 'Other / Uncategorized',        n: 33, doRate: 15.2, neither: 69.7, tier6: 78.8, boardQtrly: 30.3, baseMedian: 270000 },
-    { group: 'Director (Sr./Managing)',      n: 65, doRate: 18.5, neither: 66.2, tier6: 69.2, boardQtrly: 36.9, baseMedian: 228000 },
     { group: 'VP / Vice President',          n: 60, doRate: 33.3, neither: 51.7, tier6: 55.0, boardQtrly: 26.7, baseMedian: 289000 },
+    { group: 'Director (Sr./Managing)',      n: 65, doRate: 18.5, neither: 66.2, tier6: 69.2, boardQtrly: 36.9, baseMedian: 228000 },
+    { group: 'Other / Uncategorized',        n: 33, doRate: 15.2, neither: 69.7, tier6: 78.8, boardQtrly: 30.3, baseMedian: 270000 },
+    { group: 'Head of Security',             n: 49, doRate:  8.2, neither: 79.6, tier6: 69.4, boardQtrly: 14.3, baseMedian: 300000 },
   ],
   formalCISOBenchmarkDO: 59.5,
 };
