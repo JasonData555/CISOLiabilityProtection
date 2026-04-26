@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import hitchLogo from '../assets/hitch_logo.png';
 import { SectionHeader, Callout, ChartWrapper, BodyText, Divider, FadeInSection } from '../components/design-system';
 import ProtectionStackBar from '../components/charts/ProtectionStackBar';
 import TierStackVisualization from '../components/charts/TierStackVisualization';
@@ -152,20 +153,17 @@ export default function Findings() {
           alignItems: 'center',
           height: '52px',
         }}>
-          <Link
-            to="/"
-            style={{
-              fontFamily: 'var(--font-data)',
-              fontSize: 'var(--text-label)',
-              fontWeight: 500,
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              color: 'var(--color-text)',
-              opacity: 0.7,
-              whiteSpace: 'nowrap',
-            }}
-          >
-            Hitch Partners
+          <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+            <img
+              src={hitchLogo}
+              alt="Hitch Partners"
+              style={{
+                height: '22px',
+                width: 'auto',
+                mixBlendMode: 'multiply',
+                opacity: 0.7,
+              }}
+            />
           </Link>
 
           <div style={{ display: 'flex', gap: 'var(--space-sm)', alignItems: 'center', overflow: 'hidden' }} className="findings-nav-items">

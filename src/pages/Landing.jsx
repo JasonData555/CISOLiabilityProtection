@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import hitchLogo from '../assets/hitch_logo.png';
 import { StatCard, BodyText, Divider, FadeInSection } from '../components/design-system';
 
 // Count-up hook — runs once when shouldStart is true
@@ -54,19 +55,17 @@ export default function Landing() {
             margin: '0 auto',
           }}
         >
-          <span
+          <img
+            src={hitchLogo}
+            alt="Hitch Partners"
             style={{
-              fontFamily: 'var(--font-data)',
-              fontSize: 'var(--text-label)',
-              fontWeight: 500,
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              color: 'var(--color-text-inverse)',
+              height: '26px',
+              width: 'auto',
+              filter: 'invert(1)',
+              mixBlendMode: 'screen',
               opacity: 0.8,
             }}
-          >
-            Hitch Partners
-          </span>
+          />
           <Link
             to="/findings"
             style={{
