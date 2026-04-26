@@ -185,7 +185,7 @@ function InvBadge({ label, status }) {
       <span style={{
         fontFamily: 'var(--font-body)',
         fontSize: '13px',
-        color: 'rgba(255,255,255,0.75)',
+        color: '#FFFFFF',
       }}>
         {label}
       </span>
@@ -194,7 +194,7 @@ function InvBadge({ label, status }) {
         fontSize: '11px',
         fontWeight: 500,
         letterSpacing: '0.08em',
-        color: isPositive ? '#4CAF7D' : 'var(--color-accent)',
+        color: isPositive ? '#7ECEC8' : 'var(--color-amber)',
       }}>
         {status}
       </span>
@@ -319,11 +319,12 @@ export default function LACTool() {
 
       {/* ══ ZONE 1: INPUTS ══════════════════════════════════════════════════ */}
       <div style={{
-        background: 'var(--color-bg-tint)',
-        border: '1px solid var(--color-border)',
+        background: '#FFFFFF',
+        border: '1px solid #C8D5D3',
         borderRadius: '4px',
         padding: '40px',
         marginBottom: '24px',
+        boxShadow: '0 2px 12px rgba(8, 50, 48, 0.08)',
       }}>
         <div
           className="lac-zone1-cols"
@@ -537,16 +538,16 @@ export default function LACTool() {
               fontFamily: 'var(--font-body)',
               fontSize: '16px',
               fontWeight: 500,
-              letterSpacing: '0.04em',
-              background: canCalculate ? 'var(--color-text)' : 'var(--color-border)',
-              color: canCalculate ? 'var(--color-text-inverse)' : 'var(--color-text-muted)',
+              letterSpacing: '0.06em',
+              background: canCalculate ? '#083230' : 'var(--color-border)',
+              color: canCalculate ? '#F7F6F2' : 'var(--color-text-muted)',
               border: 'none',
               borderRadius: '2px',
               cursor: canCalculate ? 'pointer' : 'not-allowed',
               transition: 'background 0.15s',
             }}
-            onMouseEnter={e => { if (canCalculate) e.target.style.background = 'var(--color-data-partial, #5C6878)'; }}
-            onMouseLeave={e => { if (canCalculate) e.target.style.background = 'var(--color-text)'; }}
+            onMouseEnter={e => { if (canCalculate) e.target.style.background = '#0A4240'; }}
+            onMouseLeave={e => { if (canCalculate) e.target.style.background = '#083230'; }}
           >
             Analyze My Offer
           </button>
@@ -758,28 +759,28 @@ export default function LACTool() {
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
           gap: '0',
-          background: 'var(--color-bg-dark)',
+          background: 'var(--color-bg-zone3)',
           borderRadius: '4px',
           padding: '48px',
           opacity: calculated ? 1 : 0.55,
         }}
       >
         {/* ── Col A: Legal Coverage Status ── */}
-        <div style={{ paddingRight: '40px', borderRight: '1px solid rgba(255,255,255,0.1)' }}>
+        <div style={{ paddingRight: '40px', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
           <div style={{
             fontFamily: 'var(--font-data)',
             fontSize: '11px',
             fontWeight: 500,
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
-            color: 'var(--color-accent)',
+            color: '#7ECEC8',
             marginBottom: '20px',
           }}>
             Legal Coverage Status
           </div>
 
           {!calculated ? (
-            <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', lineHeight: 1.7 }}>
+            <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#FFFFFF', lineHeight: 1.7 }}>
               Your D&O, indemnification, and equity protection status.
             </div>
           ) : (
@@ -792,7 +793,7 @@ export default function LACTool() {
                 <div style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: '13px',
-                  color: 'rgba(255,255,255,0.75)',
+                  color: '#FFFFFF',
                   lineHeight: 1.7,
                 }}>
                   {isFullyProtected
@@ -805,26 +806,26 @@ export default function LACTool() {
         </div>
 
         {/* ── Col B: Defense Cost Reference ── */}
-        <div style={{ padding: '0 40px', borderRight: '1px solid rgba(255,255,255,0.1)' }}>
+        <div style={{ padding: '0 40px', borderRight: '1px solid rgba(255,255,255,0.15)' }}>
           <div style={{
             fontFamily: 'var(--font-data)',
             fontSize: '11px',
             fontWeight: 500,
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
-            color: 'var(--color-accent)',
+            color: '#7ECEC8',
             marginBottom: '20px',
           }}>
             Reference: Defense Costs
           </div>
 
           {!calculated ? (
-            <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', lineHeight: 1.7 }}>
+            <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#FFFFFF', lineHeight: 1.7 }}>
               What personal legal defense costs look like when borne personally.
             </div>
           ) : (
             <>
-              <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6, marginBottom: '20px' }}>
+              <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#FFFFFF', lineHeight: 1.6, marginBottom: '20px' }}>
                 What covered defense costs look like when borne personally:
               </div>
 
@@ -833,10 +834,10 @@ export default function LACTool() {
                 { label: 'Class action / securities litigation', value: '$200K – $2M' },
               ].map(item => (
                 <div key={item.label} style={{ marginBottom: '20px' }}>
-                  <div style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.55)', marginBottom: '4px', lineHeight: 1.5 }}>
+                  <div style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: '#FFFFFF', marginBottom: '4px', lineHeight: 1.5 }}>
                     {item.label}
                   </div>
-                  <div style={{ fontFamily: 'var(--font-data)', fontSize: '15px', fontWeight: 500, color: 'rgba(255,255,255,0.9)' }}>
+                  <div style={{ fontFamily: 'var(--font-data)', fontSize: '15px', fontWeight: 500, color: '#FFFFFF' }}>
                     {item.value}
                   </div>
                 </div>
@@ -864,21 +865,21 @@ export default function LACTool() {
             fontWeight: 500,
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
-            color: 'var(--color-accent)',
+            color: '#7ECEC8',
             marginBottom: '20px',
           }}>
             Your Industry
           </div>
 
           {!calculated || !industryInfo ? (
-            <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', lineHeight: 1.7 }}>
+            <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#FFFFFF', lineHeight: 1.7 }}>
               {!calculated
                 ? 'Protection rates and comp benchmarks for your industry.'
                 : 'Select an industry in the inputs above to see protection rates and benchmarks.'}
             </div>
           ) : (
             <>
-              <div style={{ fontFamily: 'var(--font-body)', fontSize: '18px', fontWeight: 500, color: 'rgba(255,255,255,0.95)', marginBottom: '20px', lineHeight: 1.3 }}>
+              <div style={{ fontFamily: 'var(--font-body)', fontSize: '18px', fontWeight: 500, color: '#FFFFFF', marginBottom: '20px', lineHeight: 1.3 }}>
                 {s.industry}
               </div>
 
@@ -889,22 +890,22 @@ export default function LACTool() {
                 { label: 'Private companies', value: `${industryInfo.privatePct}%`, highlight: false },
               ].map(stat => (
                 <div key={stat.label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.55)' }}>{stat.label}</span>
-                  <span style={{ fontFamily: 'var(--font-data)', fontSize: '14px', fontWeight: 500, color: stat.highlight ? 'var(--color-accent)' : 'rgba(255,255,255,0.9)' }}>
+                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: '#FFFFFF' }}>{stat.label}</span>
+                  <span style={{ fontFamily: 'var(--font-data)', fontSize: '14px', fontWeight: 500, color: stat.highlight ? 'var(--color-accent)' : '#FFFFFF' }}>
                     {stat.value}
                   </span>
                 </div>
               ))}
 
               <div style={{ marginTop: '20px' }}>
-                <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', letterSpacing: '0.08em', color: 'rgba(255,255,255,0.5)', marginBottom: '4px' }}>
+                <div style={{ fontFamily: 'var(--font-data)', fontSize: '11px', letterSpacing: '0.08em', color: '#FFFFFF', marginBottom: '4px' }}>
                   LAC Risk Profile
                 </div>
                 <div style={{ fontFamily: 'var(--font-data)', fontSize: '13px', fontWeight: 500, letterSpacing: '0.06em', color: lacRiskColor(industryInfo.lacRisk) }}>
                   {industryInfo.lacRisk}
                 </div>
                 {industryInfo.lacRisk === 'HIGH' && (
-                  <div style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.6)', fontStyle: 'italic', lineHeight: 1.6, marginTop: '8px' }}>
+                  <div style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: '#FFFFFF', fontStyle: 'italic', lineHeight: 1.6, marginTop: '8px' }}>
                     High-equity industries with below-average protection rates represent the widest gap between stated compensation and defined value.
                   </div>
                 )}

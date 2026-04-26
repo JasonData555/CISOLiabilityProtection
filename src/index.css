@@ -31,6 +31,8 @@
   --color-data-tier1:       #0A1628;
   --color-data-tier6:       #00897B;
   --color-data-partial:     #5C6878;
+  --color-amber:            #E8A838;   /* adverse status labels in Zone 3 */
+  --color-bg-zone3:         #0D4A47;   /* Zone 3 background — separate from hero */
 
   /* Borders */
   --color-border:           #E0DED8;

@@ -93,7 +93,7 @@ export default function ProtectionStackBar() {
         className="protection-stack-stats"
       >
         {[
-          { value: '43.2%', label: 'Unprotected or uncertain', color: 'var(--color-accent)' },
+          { value: '38.7%', label: 'Unprotected', color: 'var(--color-accent)' },
           { value: '56.4%', label: 'Have any form of protection', color: 'var(--color-data-protected)' },
           { value: '16.2%', label: 'Have both D&O and indemnification', color: 'var(--color-text-muted)' },
         ].map((stat) => (

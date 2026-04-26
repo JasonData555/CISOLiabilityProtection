@@ -234,7 +234,7 @@ export default function Findings() {
             <SectionHeader
               number="01"
               label="Scale"
-              headlineStat="38.7%"
+              headlineStat="43.2%"
               headlineColor="var(--color-accent)"
               title="More than 4 in 10 CISOs are unprotected or uncertain of their own status."
             />
@@ -317,14 +317,9 @@ export default function Findings() {
               </div>
             </Callout>
           </FadeInSection>
-          <FadeInSection delay={0.18}>
-            <BodyText>
-              The exception that proves the rule: The 33 respondents whose titles spell out "Chief Information Security Officer" or "Chief Security Officer" in full show 72.7% D&O coverage and 15.2% Tier 6 rates — nearly identical to formal CISO/CSO abbreviation holders. It is the organizational recognition implied by "Chief" that produces protection. The letters CISO are not the operative factor; the executive standing they signal is.
-            </BodyText>
-          </FadeInSection>
           <FadeInSection delay={0.2}>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-small)', fontWeight: 300, fontStyle: 'italic', color: 'var(--color-text-muted)', lineHeight: 1.6, marginTop: 'var(--space-lg)', maxWidth: '680px' }}>
-              Methodology note: Non-CISO title is defined as respondents whose self-reported title does not contain the abbreviations "CISO" or "CSO." Respondents with spelled-out equivalents are classified separately. All respondents reporting to a CISO were excluded from the survey population — the 34.4% non-CISO figure represents the top security leader at their organization, not a subordinate role.
+              Methodology note: Non-CISO title is defined as respondents whose self-reported title does not contain "Chief Information Security Officer" or the abbreviations "CISO" or "CSO."  but who are the most senior security leader within the company.
             </p>
           </FadeInSection>
         </SectionWrapper>
