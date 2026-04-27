@@ -93,9 +93,9 @@ function MethodologyCollapsible() {
           <div style={{ marginBottom: 'var(--space-lg)' }}>
             <div style={{ fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px' }}>Population Filters</div>
             Applied sequentially:<br />
-            (1) Title-Level = "CISO / Head Security Level" — excludes NextGen security leaders and unclassified records<br />
-            (2) Excludes respondents whose reporting line is "CISO" — removes Deputy CISOs and Directors subordinate to a CISO<br />
-            (3) Within-year deduplication by email address — latest submission per respondent per survey year retained
+            (1) Title-Level = "CISO / Head Security Level": excludes NextGen security leaders and unclassified records<br />
+            (2) Excludes respondents whose reporting line is "CISO": removes Deputy CISOs and Directors subordinate to a CISO<br />
+            (3) Within-year deduplication by email address: latest submission per respondent per survey year retained
           </div>
           <div style={{ marginBottom: 'var(--space-lg)' }}>
             <div style={{ fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px' }}>Final Population</div>
@@ -119,7 +119,7 @@ function MethodologyCollapsible() {
           </div>
           <div style={{ marginBottom: 'var(--space-lg)' }}>
             <div style={{ fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px' }}>Compensation</div>
-            All figures are self-reported. Equity values reflect estimated annual value. Sum of medians methodology is used for total compensation comparisons — this is not equivalent to median total compensation.
+            All figures are self-reported. Equity values reflect estimated annual value. Sum of medians methodology is used for total compensation comparisons; this is not equivalent to median total compensation.
           </div>
           <div>
             <div style={{ fontWeight: 500, color: 'var(--color-text)', marginBottom: '6px' }}>Contact</div>
@@ -217,7 +217,7 @@ export default function Findings() {
             lineHeight: 1.15,
             marginBottom: 'var(--space-md)',
           }}>
-            Full Analysis — 8 Findings
+            Full Analysis: 8 Findings
           </h1>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-body)', fontWeight: 300, color: 'rgba(247,246,242,0.55)', lineHeight: 1.6, maxWidth: '600px' }}>
             Hitch Partners 2024–2025 CISO Compensation Survey · n=943 · North America
@@ -246,7 +246,7 @@ export default function Findings() {
           </FadeInSection>
           <FadeInSection delay={0.15}>
             <BodyText>
-              More than 4 in 10 CISOs are either unprotected or uncertain of their own status — making them functionally indistinguishable from a governance risk perspective. The 4.5% who do not know their coverage status cannot invoke protection they cannot confirm. In the post-SEC disclosure environment, that uncertainty is itself an exposure.
+              More than 4 in 10 CISOs are either unprotected or uncertain of their own status, making them functionally indistinguishable from a governance risk perspective. The 4.5% who do not know their coverage status cannot invoke protection they cannot confirm. In the post-SEC disclosure environment, that uncertainty is itself an exposure.
             </BodyText>
           </FadeInSection>
         </SectionWrapper>
@@ -297,12 +297,12 @@ export default function Findings() {
               label="The Title Gap"
               headlineStat="34.4%"
               headlineColor="var(--color-accent)"
-              title="More than 1 in 3 CISOs leads the security function without the formal title — and pays a steep protection price for it."
+              title="More than 1 in 3 CISOs leads the security function without the formal title and pays a steep protection price for it."
             />
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <BodyText style={{ marginBottom: 'var(--space-xl)' }}>
-              The survey population was filtered to include only the top security leader at each organization — respondents who report to a CISO were explicitly excluded. Yet 34.4% of respondents (n=324) do not hold the formal CISO or CSO title. They carry the authority, the accountability, and the legal exposure of the role. The organizational recognition — and the executive-grade protections that follow it — does not.
+              The survey population was filtered to include only the top security leader at each organization; respondents who report to a CISO were explicitly excluded. Yet 34.4% of respondents (n=324) do not hold the formal CISO or CSO title. They carry the authority, the accountability, and the legal exposure of the role. The organizational recognition, and the executive-grade protections that follow it, does not.
             </BodyText>
           </FadeInSection>
           <FadeInSection delay={0.12}>
@@ -342,7 +342,7 @@ export default function Findings() {
           </FadeInSection>
           <FadeInSection delay={0.12}>
             <BodyText style={{ marginBottom: 'var(--space-xl)' }}>
-              D&O coverage and board access are not independent — they are downstream of the same organizational decision. Organizations that invest in security governance extend both legal protection and board visibility to the CISO. The inverse is equally true: 1 in 4 unprotected CISOs has no board access at all.
+              D&O coverage and board access are not independent; they are downstream of the same organizational decision. Organizations that invest in security governance extend both legal protection and board visibility to the CISO. The inverse is equally true: 1 in 4 unprotected CISOs has no board access at all.
             </BodyText>
           </FadeInSection>
           <FadeInSection delay={0.15}>
@@ -382,7 +382,7 @@ export default function Findings() {
           </FadeInSection>
           <FadeInSection delay={0.12}>
             <BodyText>
-              The public/private gap reflects structural differences, not governance choices. SEC cybersecurity disclosure rules apply only to public companies, creating a compliance-driven floor for D&O adoption. Private company D&O insurance architecture has historically been designed around the public company context. And shareholder litigation risk — which drives much of the demand for director and officer coverage — is largely absent at private companies. The result is a 18.7-point gap in "neither" rates that is structural before it is managerial.
+              The public/private gap reflects structural differences, not governance choices. SEC cybersecurity disclosure rules apply only to public companies, creating a compliance-driven floor for D&O adoption. Private company D&O insurance architecture has historically been designed around the public company context. And shareholder litigation risk, which drives much of the demand for director and officer coverage, is largely absent at private companies. The result is a 18.7-point gap in "neither" rates that is structural before it is managerial.
             </BodyText>
           </FadeInSection>
         </SectionWrapper>
@@ -398,7 +398,7 @@ export default function Findings() {
           </FadeInSection>
           <FadeInSection delay={0.08}>
             <BodyText style={{ marginBottom: 'var(--space-xl)' }}>
-              Liability-Adjusted Compensation (LAC) is the correct framework for evaluating CISO offers. A direct comparison of cash and equity between protected and unprotected CISOs understates the true gap — because it ignores the defined value of exit protections that Tier 1 CISOs hold, and the contingent personal liability that Tier 6 CISOs carry. The tool below shows where your offer stands relative to your peers. The contingent liability — for legal defense costs in a covered enforcement or litigation event — is disclosed separately, because it is real but cannot be precisely quantified from survey data alone.
+              Liability-Adjusted Compensation (LAC) is the correct framework for evaluating CISO offers. A direct comparison of cash and equity between protected and unprotected CISOs understates the true gap because it ignores the defined value of exit protections that Tier 1 CISOs hold, and the contingent personal liability that Tier 6 CISOs carry. The tool below shows where your offer stands relative to your peers. The contingent liability for legal defense costs in a covered enforcement or litigation event is disclosed separately, because it is real but cannot be precisely quantified from survey data alone.
             </BodyText>
           </FadeInSection>
           <FadeInSection delay={0.1}>
@@ -417,7 +417,7 @@ export default function Findings() {
             <SectionHeader
               number="07"
               label="Trajectory"
-              title="Protection rates are improving — but the fastest-growing CISO segment isn't participating."
+              title="Protection rates are improving, but the fastest-growing CISO segment isn't participating."
             />
           </FadeInSection>
           <FadeInSection delay={0.08}>
@@ -427,7 +427,7 @@ export default function Findings() {
           </FadeInSection>
           <FadeInSection delay={0.12}>
             <BodyText>
-              D&O coverage improved by 6.2 percentage points year-over-year — directionally real. But the full trifecta rate declined from 8.3% to 6.7%, suggesting organizations are extending basic D&O coverage without committing to comprehensive protection packages. Meanwhile, the fastest-growing CISO market segment — first-time appointments, rising from 25.7% to 29.9% of all CISOs in a single year — is the least protected cohort in the dataset. Aggregate improvement obscures a deteriorating margin.
+              D&O coverage improved by 6.2 percentage points year-over-year, a directionally real result. But the full trifecta rate declined from 8.3% to 6.7%, suggesting organizations are extending basic D&O coverage without committing to comprehensive protection packages. Meanwhile, the fastest-growing CISO market segment, first-time appointments rising from 25.7% to 29.9% of all CISOs in a single year, is the least protected cohort in the dataset. Aggregate improvement obscures a deteriorating margin.
             </BodyText>
           </FadeInSection>
         </SectionWrapper>
@@ -438,22 +438,22 @@ export default function Findings() {
             <SectionHeader
               number="08"
               label="Implications"
-              title="What this means — for CISOs, boards, and the executives who structure these roles."
+              title="What this means: for CISOs, boards, and the executives who structure these roles."
             />
           </FadeInSection>
 
           {[
             {
               audience: 'For CISOs',
-              text: 'Know your tier. If you are among the 4.5% who do not know their coverage status, that is the first problem to solve — protection you cannot confirm is protection you cannot invoke. Pre-negotiating coverage is substantially easier before an incident than after, and substantially easier at hire than at any subsequent point. The Tier 1 benchmarks in this data represent what comprehensive protection looks like. Anything below Tier 3 leaves legal defense costs as a personal exposure.',
+              text: 'Know your tier. If you are among the 4.5% who do not know their coverage status, that is the first problem to solve: protection you cannot confirm is protection you cannot invoke. Pre-negotiating coverage is substantially easier before an incident than after, and substantially easier at hire than at any subsequent point. The Tier 1 benchmarks in this data represent what comprehensive protection looks like. Anything below Tier 3 leaves legal defense costs as a personal exposure.',
             },
             {
               audience: 'For Boards',
-              text: 'D&O coverage of the CISO is a governance decision, not an HR one. The data shows that organizations where the CISO has no board access and no legal protection are making a structural statement about how seriously they treat security governance. That statement is now quantified and visible to the candidates you are trying to hire. The top 3.4% of the CISO market — Tier 1 talent — increasingly evaluate roles against this benchmark.',
+              text: 'D&O coverage of the CISO is a governance decision, not an HR one. The data shows that organizations where the CISO has no board access and no legal protection are making a structural statement about how seriously they treat security governance. That statement is now quantified and visible to the candidates you are trying to hire. The top 3.4% of the CISO market, Tier 1 talent, increasingly evaluate roles against this benchmark.',
             },
             {
               audience: 'For General Counsels and CHROs',
-              text: 'The employment term structure for the CISO role has not kept pace with the legal environment the role operates in. The tier framework in this research provides a defensible benchmark for structuring CISO employment agreements. Indemnification and D&O coverage protect against different failure modes and both belong in a complete package. Pre-negotiating severance and accelerated vesting — present in only 17.5% and 16.4% of packages respectively — converts departure risk from a leverage-free negotiation into a defined obligation.',
+              text: 'The employment term structure for the CISO role has not kept pace with the legal environment the role operates in. The tier framework in this research provides a defensible benchmark for structuring CISO employment agreements. Indemnification and D&O coverage protect against different failure modes and both belong in a complete package. Pre-negotiating severance and accelerated vesting, present in only 17.5% and 16.4% of packages respectively, converts departure risk from a leverage-free negotiation into a defined obligation.',
             },
           ].map((item, i) => (
             <FadeInSection key={item.audience} delay={i * 0.1}>

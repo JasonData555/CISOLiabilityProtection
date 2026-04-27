@@ -57,9 +57,9 @@ export default function YoYComparison() {
           </div>
 
           {[
-            { label: 'Neither', value: `${y2025.neither}%`, color: 'var(--color-accent)', large: true, change: '↓ 17.6pts — treat as directional' },
+            { label: 'Neither', value: `${y2025.neither}%`, color: 'var(--color-accent)', large: true, change: '↓ 17.6pts, treat as directional' },
             { label: 'D&O', value: `${y2025.doRate}%`, color: 'var(--color-data-protected)', large: false, change: '↑ 6.2pts' },
-            { label: 'First-Time CISOs', value: `${y2025.firstTime}%`, color: 'var(--color-accent)', large: false, change: '↑ 4.2pts — growing, least protected' },
+            { label: 'First-Time CISOs', value: `${y2025.firstTime}%`, color: 'var(--color-accent)', large: false, change: '↑ 4.2pts, growing, least protected' },
             { label: 'Tier 1 (Fully Protected)', value: `${y2025.tier1}%`, color: 'var(--color-text)', large: false, change: '↑ 0.2pts' },
           ].map((row) => (
             <div key={row.label} style={{ marginBottom: 'var(--space-lg)', paddingBottom: 'var(--space-lg)', borderBottom: '1px solid var(--color-border)' }}>
@@ -91,7 +91,7 @@ export default function YoYComparison() {
         borderRadius: '2px',
         lineHeight: 1.6,
       }}>
-        ⚠ The "Not Sure" response option was absent from the 2024 survey instrument. The 17.6-point decline in "Neither" should be treated as directional — some portion may reflect reclassification rather than actual coverage gains.
+        ⚠ The "Not Sure" response option was absent from the 2024 survey instrument. The 17.6-point decline in "Neither" should be treated as directional; some portion may reflect reclassification rather than actual coverage gains.
       </div>
 
       <style>{`

@@ -23,43 +23,43 @@ function formatDollar(raw) {
 const TIERS = [
   {
     value: '1',
-    label: 'Tier 1 — D&O + Indemnification + Severance + Accel. Vesting',
+    label: 'Tier 1: D&O + Indemnification + Severance + Accel. Vesting',
     definition:
       'Full legal and exit protection. Covered defense costs are advanced by the company and its insurer without insolvency risk. Unvested equity accelerates on covered termination. Severance provides a cash bridge on exit.',
   },
   {
     value: '2',
-    label: 'Tier 2 — Both legal protections + one exit term',
+    label: 'Tier 2: Both legal protections + one exit term',
     definition:
-      'D&O and indemnification are both present. You have one exit term — severance OR accelerated vesting, but not both. Strong legal coverage with partial exit protection.',
+      'D&O and indemnification are both present. You have one exit term: severance OR accelerated vesting, but not both. Strong legal coverage with partial exit protection.',
   },
   {
     value: '3',
-    label: 'Tier 3 — Both legal protections, no exit terms',
+    label: 'Tier 3: Both legal protections, no exit terms',
     definition:
       'D&O and indemnification are both present. No severance or accelerated vesting. Legal defense costs are covered, but cash and equity are not protected on exit.',
   },
   {
     value: '4',
-    label: 'Tier 4 — D&O or Indemnification only',
+    label: 'Tier 4: D&O or Indemnification only',
     definition:
       'You have one form of legal protection but not both. You are missing the second legal instrument that provides defense cost advancement (if you have D&O but no indemnification) or third-party coverage in insolvency (if you have indemnification but no D&O).',
   },
   {
     value: '5',
-    label: 'Tier 5 — Exit terms only, no legal protection',
+    label: 'Tier 5: Exit terms only, no legal protection',
     definition:
       'You have severance or accelerated vesting but no legal coverage. Personal defense costs in a covered enforcement or litigation event remain a direct personal liability.',
   },
   {
     value: '6',
-    label: 'Tier 6 — No protection of any kind',
+    label: 'Tier 6: No protection of any kind',
     definition:
       'No D&O coverage, no indemnification, no severance, no accelerated vesting. All four dimensions are absent.',
   },
   {
     value: 'ns',
-    label: "Not Sure — I don't know my coverage status",
+    label: "Not Sure: I don't know my coverage status",
     definition: null, // special handling
   },
 ];
@@ -369,7 +369,7 @@ export default function LACTool() {
             </FieldWrap>
 
             <FieldWrap>
-              <FieldLabel>Equity Grant — Total</FieldLabel>
+              <FieldLabel>Equity Grant: Total</FieldLabel>
               <input
                 type="text"
                 placeholder="$0,000,000"
@@ -657,7 +657,7 @@ export default function LACTool() {
                 Defined Value Gap
               </div>
               <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--color-text-muted)', lineHeight: 1.7 }}>
-                See how your offer compares to a Tier 1 peer in your cohort — cash, equity, severance, and unvested equity.
+                See how your offer compares to a Tier 1 peer in your cohort: cash, equity, severance, and unvested equity.
               </div>
             </>
           ) : (
@@ -798,7 +798,7 @@ export default function LACTool() {
                 }}>
                   {isFullyProtected
                     ? 'Your coverage transfers covered legal defense costs and equity risk to the company and its insurer.'
-                    : 'Without D&O coverage and indemnification, personal legal defense costs in a covered enforcement or litigation event are a direct personal liability — not a corporate one.'}
+                    : 'Without D&O coverage and indemnification, personal legal defense costs in a covered enforcement or litigation event are a direct personal liability, not a corporate one.'}
                 </div>
               </div>
             </>
@@ -851,7 +851,7 @@ export default function LACTool() {
                 color: 'rgba(255,255,255,0.4)',
                 lineHeight: 1.7,
               }}>
-                Source: Published case records and legal industry data. Defense costs only — not judgments or settlements.
+                Source: Published case records and legal industry data. Defense costs only, not judgments or settlements.
               </div>
             </>
           )}

@@ -21,8 +21,8 @@ export const tiers = [
   { tier: 1, label: 'Fully Protected',          definition: 'D&O + Indemnification + Severance + Accel. Vesting', n: 32,  pct: 3.4  },
   { tier: 2, label: 'Strong Legal + Partial Exit', definition: 'D&O + Indemnification + one exit term',           n: 29,  pct: 3.1  },
   { tier: 3, label: 'Legal Protected, No Exit', definition: 'D&O + Indemnification only',                         n: 92,  pct: 9.8  },
-  { tier: 4, label: 'Partial Legal Only',        definition: 'D&O or Indemnification — not both',                 n: 379, pct: 40.2 },
-  { tier: 5, label: 'Exit Terms Only',           definition: 'Severance or vesting — no legal protection',        n: 57,  pct: 6.0  },
+  { tier: 4, label: 'Partial Legal Only',        definition: 'D&O or Indemnification, not both',                  n: 379, pct: 40.2 },
+  { tier: 5, label: 'Exit Terms Only',           definition: 'Severance or vesting, no legal protection',         n: 57,  pct: 6.0  },
   { tier: 6, label: 'No Protection',             definition: 'None of the four dimensions',                       n: 354, pct: 37.5 },
 ];
 

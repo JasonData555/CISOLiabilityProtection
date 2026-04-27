@@ -323,12 +323,12 @@ export default function Landing() {
         <div style={{ maxWidth: '680px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
           <FadeInSection>
             <BodyText>
-              The SEC's December 2023 cybersecurity disclosure rules formalized what practitioners had long understood: the CISO role now carries material personal legal exposure. The SolarWinds enforcement action — in which the SEC brought charges directly against CISO Timothy Brown — established that individual accountability is not theoretical. State regulatory enforcement, FTC authority, and breach litigation have extended that exposure beyond public companies.
+              The SEC's December 2023 cybersecurity disclosure rules formalized what practitioners had long understood: the CISO role now carries material personal legal exposure. The SolarWinds enforcement action, in which the SEC brought charges directly against CISO Timothy Brown, established that individual accountability is not theoretical. State regulatory enforcement, FTC authority, and breach litigation have extended that exposure beyond public companies.
             </BodyText>
           </FadeInSection>
           <FadeInSection delay={0.1}>
             <BodyText>
-              The private company cohort remains critically exposed. The enforcement environment that created CISO personal liability risk was built around public company obligations — but the breach litigation, state regulatory enforcement, and FTC authority that followed it do not stop at the public/private line.
+              The private company cohort remains critically exposed. The enforcement environment that created CISO personal liability risk was built around public company obligations, but the breach litigation, state regulatory enforcement, and FTC authority that followed it do not stop at the public/private line.
             </BodyText>
           </FadeInSection>
           <FadeInSection delay={0.15}>
@@ -348,7 +348,7 @@ export default function Landing() {
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-accent-dark)')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-accent)')}
               >
-                Read the Full Analysis — 8 Findings →
+                Read the Full Analysis: 8 Findings →
               </Link>
             </div>
           </FadeInSection>
