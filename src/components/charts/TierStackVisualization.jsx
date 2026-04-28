@@ -96,9 +96,9 @@ export default function TierStackVisualization() {
         className="tier-summary-grid"
       >
         {[
-          { value: '16.2%', label: 'MEANINGFUL', sublabel: 'Tiers 1+2+3:', desc: 'Has both D&O and indemnification', color: 'var(--color-data-protected)' },
-          { value: '46.2%', label: 'PARTIAL',    sublabel: 'Tiers 4+5:',   desc: 'One legal protection or exit terms only', color: 'var(--color-data-partial)' },
-          { value: '37.5%', label: 'UNPROTECTED',sublabel: 'Tier 6:',       desc: 'No protection of any kind', color: 'var(--color-accent)' },
+          { value: '16.2%', label: 'PROTECTED',           sublabel: 'Tiers 1+2+3 ·', desc: 'Has both legal instruments',          color: 'var(--color-data-protected)' },
+          { value: '46.2%', label: 'PARTIALLY PROTECTED', sublabel: 'Tiers 4+5 ·',   desc: 'One protection or exit terms only',   color: 'var(--color-data-partial)' },
+          { value: '37.5%', label: 'UNPROTECTED',          sublabel: 'Tier 6 ·',       desc: 'No protection of any kind',           color: 'var(--color-accent)' },
         ].map((item) => (
           <div key={item.label} style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-hero)', fontWeight: 700, color: item.color, lineHeight: 1.1, marginBottom: '6px' }}>

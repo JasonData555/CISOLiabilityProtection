@@ -272,6 +272,18 @@ export default function Findings() {
               <TierStackVisualization />
             </ChartWrapper>
           </FadeInSection>
+          <FadeInSection delay={0.13}>
+            <p style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '17px',
+              lineHeight: 1.7,
+              color: 'var(--color-text)',
+              margin: 'var(--space-xl) 0',
+              maxWidth: '680px',
+            }}>
+              Collapsing the six tiers to their essential structure: 16.2% of CISOs are meaningfully protected, 46.2% are partially protected, and 37.5% have no protection at all. The four-cohort breakdown below shows how dramatically these odds shift depending on where a CISO sits.
+            </p>
+          </FadeInSection>
           <FadeInSection delay={0.15}>
             <ChartWrapper title="Four-Cohort Protection Ladder" source="n=865 across four cohorts">
               <CohortLadder />
