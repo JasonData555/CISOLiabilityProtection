@@ -486,6 +486,40 @@ export default function Findings() {
             </FadeInSection>
           ))}
 
+          {/* The Trajectory */}
+          <FadeInSection delay={0.3}>
+            <div style={{
+              marginTop: 'var(--space-2xl)',
+              paddingTop: 'var(--space-lg)',
+              borderTop: '1px solid var(--color-border)',
+              marginBottom: 'var(--space-2xl)',
+            }}>
+              <div style={{
+                fontFamily: 'var(--font-data)',
+                fontSize: '11px',
+                fontWeight: 500,
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                color: 'var(--color-accent)',
+                marginBottom: 'var(--space-md)',
+              }}>
+                The Trajectory
+              </div>
+              <BodyText style={{ marginBottom: 'var(--space-md)' }}>
+                The data in this report captures a single moment. The trend it reveals is not static.
+              </BodyText>
+              <BodyText style={{ marginBottom: 'var(--space-md)' }}>
+                The CISO mandate is expanding in every direction simultaneously. 93% of CISOs now own Incident Response — the function that determines accountability when a breach occurs. 89% own Security Operations. 82% own Governance, Risk, and Compliance — the function that sits at the center of every regulatory enforcement conversation. The majority also own IT infrastructure and product security. As that footprint grows, so does the scope of what a CISO can be held personally accountable for in a breach or enforcement event.
+              </BodyText>
+              <BodyText style={{ marginBottom: 'var(--space-md)' }}>
+                Meanwhile, organizational positioning is moving in the opposite direction. Elevated CISO reporting — to the CEO, COO, CFO, or General Counsel — declined from 37.4% in 2024 to 31.9% in 2025. The role is absorbing more responsibility while simultaneously reporting lower in the organizational structure.
+              </BodyText>
+              <BodyText>
+                The protection gap documented here is not a snapshot of a stable condition. It is a measurement of a widening one. The gap between what the CISO role is accountable for and what the organization provides to protect it is larger today than it was a year ago — and the trajectory has not changed.
+              </BodyText>
+            </div>
+          </FadeInSection>
+
           {/* Hitch Partners close */}
           <FadeInSection delay={0.3}>
             <div style={{
